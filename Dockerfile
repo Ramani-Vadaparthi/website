@@ -1,6 +1,4 @@
-FROM ubuntu:latest
-MAINTAINER ME
-
+FROM ubuntu
 RUN apt-get update && apt-get install -y net-tools apache2 apache2-utils
 RUN apt-get clean 
 EXPOSE 80 
