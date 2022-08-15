@@ -1,5 +1,5 @@
-mkdir apache_folder
-FROM ubuntu 
+FROM ubuntu
+RUN mkdir apache_folder
 RUN apt-get update 
 RUN apt-get install –y apache2 
 RUN apt-get install –y apache2-utils 
