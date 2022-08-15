@@ -5,4 +5,3 @@ RUN apt-get update && apt-get install -y net-tools apache2 apache2-utils php5 li
 RUN apt-get clean 
 EXPOSE 80 
 CMD [“apache2ctl”, “-D”, “FOREGROUND”]
-COPY . /var/www/html/
